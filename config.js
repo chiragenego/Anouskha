@@ -166,29 +166,33 @@ window.FAREWELL_CONFIG = {
   letter: `
 Dear Ma'am,
 
-I have been trying to write this message for a while, but honestly, it's hard to put into words what you mean to me.
+I have been trying to write this message for a while, but honestly, it's really hard to put into words what you mean to me.
 
-People say managers come and go, but I don't think I'll ever find another one like you.
+When I first started working with you, I never thought a manager could have such a positive impact on someone's life. But you proved me wrong.
 
-You never treated us like just employees. You treated us like people. Whenever we were stressed, confused, or even dealing with something personal, you were always there. Sometimes, you believed in us even when we didn't believe in ourselves.
+You were never just my manager. You were someone I could always look up to. Whether it was work or something personal, I always felt like I could count on you. You never made me feel like I was just another employee—you treated me with kindness, respect, and understanding, and I'll always be grateful for that.
 
-You didn't just teach me how to work better. You taught me how to stay calm, how to handle difficult situations, and how to keep moving forward. Those lessons will stay with me for the rest of my life.
+You believed in me during moments when I wasn't even sure of myself. Your guidance, your patience, and the trust you showed me helped me grow, not only professionally but as a person. Some lessons you taught me had nothing to do with work, yet they are the ones I know I'll carry with me for the rest of my life.
 
-I know everyone has their own opinions about people. But honestly, I don't care what anyone says. For me, you are the best manager I have ever worked with, and probably the best I ever will. That's something I truly mean from my heart.
+I know everyone has their own opinions about people, and that's completely okay. But from the bottom of my heart, I honestly don't care what anyone says. To me, you are the best manager I have ever had in my career, and I truly mean that. People like you are rare.
 
-Thank you for every conversation, every piece of advice, every time you stood by us, and every time you trusted us. You made the workplace feel safe, and that's something very rare.
+Thank you for every conversation, every piece of advice, every word of encouragement, and every time you stood by me. You made even the difficult days easier, simply because I knew I had someone who genuinely cared.
 
-It's difficult to imagine coming to work and not seeing you around anymore. It really won't feel the same.
+It's hard to imagine coming to work and not seeing you around anymore. It really won't feel the same.
 
-I hope this new journey gives you everything you deserve because if anyone deserves happiness, success, and peace, it's you.
+I truly hope this new chapter of your life brings you all the happiness, success, and peace that you deserve. If anyone has earned it, it's you.
 
-Thank you for being more than a manager. Thank you for being someone we could always count on.
+Thank you for believing in me, for helping me become a better professional, and more importantly, a better person.
 
-No matter where life takes us, I'll always be grateful that I got the chance to work with you.
+I feel incredibly lucky that I got the opportunity to work with you. No matter where life takes me, I'll always be thankful that our paths crossed.
 
-We'll miss you more than words can say.
+You'll always have my respect, my gratitude, and my best wishes.
 
-Take care, Ma'am. And please don't forget us, because we definitely won't forget you. ❤️
+Please take care of yourself, Ma'am. And if there's one thing I want you to remember, it's this:
+
+You made a difference in my life, and that's something I'll never forget.
+
+Thank you for everything. ❤️
 `,
 
 
