@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#E9DDFB">
+  <meta name="description" content="A little farewell gift. Resignation approved. Friendship termination denied.">
+  <title>Resignation Rejected.exe 💌</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>💌</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fredoka:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Animated background ===== -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-layer bg-pastel"></div>
+    <div class="bg-layer bg-warm"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <!-- ===== Top bar: title, progress, sound ===== -->
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon" aria-hidden="true">💌</span><span class="brand-text">Anoushka Ghosh <span class="exe">Farewell</span></span></div>
+    <ol class="steps" id="steps" aria-label="Story progress">
+      <li class="is-current"><span class="sr-only">Excuse me</span></li>
+      <li><span class="sr-only">Friendship records</span></li>
+      <li><span class="sr-only">Final decision</span></li>
+      <li><span class="sr-only">Letter</span></li>
+    </ol>
+    <div class="controls">
+      <button class="icon-btn" id="soundBtn" type="button" aria-pressed="true" title="Sound effects">
+        <span aria-hidden="true" class="ico-on">🔊</span><span aria-hidden="true" class="ico-off">🔇</span>
+        <span class="sr-only">Sound effects</span>
+      </button>
+      <button class="icon-btn" id="musicBtn" type="button" aria-pressed="false" title="Background music">
+        <span aria-hidden="true">♪</span><span class="sr-only">Background music</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app">
+
+    <!-- =================================================================
+         SLIDE 1 — EXCUSE ME?!
+         ================================================================= -->
+    <section class="screen is-active" id="s1" aria-labelledby="s1-title">
+      <div class="deco" aria-hidden="true">
+        <div class="mini-polaroid mp-1"><span data-photo-thumb="photo1"></span></div>
+        <div class="mini-polaroid mp-2"><span data-photo-thumb="photo5"></span></div>
+        <div class="mini-polaroid mp-3"><span data-photo-thumb="photo4"></span></div>
+        <div class="mini-polaroid mp-4"><span data-photo-thumb="photo2"></span></div>
+        <span class="deco-item d-env2">💌</span>
+        <span class="deco-item d-star1">✦</span>
+        <span class="deco-item d-star2">✧</span>
+        <span class="deco-item d-star3">✦</span>
+        <span class="deco-item d-clip">📎</span>
+      </div>
+
+      <div class="s1-wrap">
+        <h1 class="title-big" id="s1-title" tabindex="-1"><span data-cfg="slide1.heading" data-split></span></h1>
+        <p class="title-sub step-in" data-cfg="slide1.subheading"></p>
+        <p class="lead step-in" data-cfg="slide1.message"></p>
+
+        <div class="btn-row step-in">
+          <button class="btn btn-glass" id="s1b1" type="button" data-cfg="slide1.button1"></button>
+          <button class="btn btn-glass" id="s1b2" type="button" data-cfg="slide1.button2"></button>
+        </div>
+
+        <div class="reaction-slot" id="s1reaction" aria-live="polite"></div>
+
+        <button class="btn btn-primary btn-big" id="s1next" type="button" hidden data-cfg="slide1.nextButton"></button>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 2 — FRIENDSHIP RECORDS SCAN
+         ================================================================= -->
+    <section class="screen" id="s2" aria-labelledby="s2-title" hidden>
+      <div class="s2-wrap">
+        <header class="s-head">
+          <p class="eyebrow">Step 2 · Background verification</p>
+          <h2 class="title-mid" id="s2-title" tabindex="-1" data-cfg="slide2.heading"></h2>
+          <p class="lead" data-cfg="slide2.subheading"></p>
+        </header>
+
+        <div class="s2-grid">
+          <div class="window glass">
+            <div class="window-bar">
+              <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="window-title">FRIENDSHIP DEPARTMENT™</span>
+              <span class="window-sub">records-scanner.exe</span>
+            </div>
+            <div class="window-body">
+              <div class="scanner">
+                <div class="scan-orb" aria-hidden="true"><span>🔍</span><i></i><i></i></div>
+                <div class="progress-wrap">
+                  <div class="progress-meta"><span id="progLabel">Initializing scanner…</span><b id="progPct">0%</b></div>
+                  <div class="progress" role="progressbar" aria-label="Friendship scan" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progBar">
+                    <div class="progress-fill" id="progFill"></div>
+                  </div>
+                </div>
+              </div>
+              <ul class="scan-log" id="scanLog" aria-live="polite"></ul>
+
+              <div class="scan-result" id="scanResult" hidden>
+                <p class="warn-title" data-cfg="slide2.warningTitle"></p>
+                <p class="warn-text" data-cfg="slide2.warningText"></p>
+                <p class="warn-action" data-cfg="slide2.warningAction"></p>
+              </div>
+
+              <button class="skip-btn" id="s2skip" type="button">Skip animation ⏭</button>
+            </div>
+          </div>
+
+          <div class="evidence">
+            <h3 class="evidence-title">📎 Evidence collected <small>hover or tap a photo</small></h3>
+            <div class="evidence-board" id="polaroids">
+              <p class="evidence-empty" id="evidenceEmpty">Searching the archives for evidence…</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-row">
+          <button class="btn btn-primary btn-big" id="s2next" type="button" hidden data-cfg="slide2.nextButton"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 3 — THE VERDICT
+         ================================================================= -->
+    <section class="screen" id="s3" aria-labelledby="s3-title" hidden>
+      <div class="s3-wrap">
+
+        <div class="stage-a" id="stageA">
+          <article class="doc" id="doc" aria-label="Official notice">
+            <header class="doc-head">
+              <span class="doc-logo" aria-hidden="true">💼</span>
+              <div>
+                <p class="doc-org">FRIENDSHIP DEPARTMENT™</p>
+                <p class="doc-ref">Official Notice · Ref&nbsp;#FR-∞</p>
+              </div>
+            </header>
+            <dl class="doc-meta">
+              <div><dt>Employee</dt><dd data-name="nickname"></dd></div>
+              <div><dt>Request</dt><dd>Voluntary resignation</dd></div>
+              <div><dt>Date</dt><dd id="docDate"></dd></div>
+            </dl>
+            <div class="doc-row" id="row1">
+              <span class="doc-label">RESIGNATION STATUS</span>
+              <span class="stamp stamp-green" id="stamp1">APPROVED ✓</span>
+            </div>
+            <div class="doc-row" id="row2">
+              <span class="doc-label">FRIENDSHIP TERMINATION STATUS</span>
+              <span class="stamp stamp-red" id="stamp2">DENIED ❌</span>
+            </div>
+            <footer class="doc-sign">
+              <span>Authorized by</span>
+              <span class="sig" data-name="myName"></span>
+              <small>Chief Friendship Officer</small>
+            </footer>
+          </article>
+
+          <div class="verdict">
+            <h2 class="verdict-1" id="s3-title" tabindex="-1" data-cfg="slide3.heading1"></h2>
+            <h2 class="verdict-2" id="verdict2"></h2>
+            <div class="verdict-msg" id="verdictMsg"></div>
+            <button class="btn btn-primary" id="acceptBtn" type="button" hidden data-cfg="slide3.acceptButton"></button>
+          </div>
+
+          <button class="skip-btn skip-float" id="s3skip" type="button">Skip animation ⏭</button>
+        </div>
+
+        <div class="stage-b" id="stageB" hidden>
+          <article class="farewell-card">
+            <p class="card-ribbon">✦ farewell ✦</p>
+            <div class="fav-photo" id="favPhoto"></div>
+            <p class="card-line1" data-cfg="slide3.cardLine1"></p>
+            <p class="card-line2" data-cfg="slide3.cardLine2"></p>
+            <button class="btn btn-glow" id="s3next" type="button" hidden data-cfg="slide3.nextButton"></button>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         FINAL — THE LETTER
+         ================================================================= -->
+    <section class="screen" id="s4" aria-labelledby="s4-title" hidden>
+      <div class="s4-wrap">
+
+        <div class="env-stage" id="envStage">
+          <p class="whisper" id="whisper1" data-cfg="letterIntro1"></p>
+          <p class="whisper whisper-2" id="whisper2" data-cfg="letterIntro2"></p>
+
+          <button class="envelope" id="envelope" type="button" aria-label="Open your letter">
+            <span class="env-back"></span>
+            <span class="env-letter"><span class="env-letter-lines"></span></span>
+            <span class="env-front"></span>
+            <span class="env-flap"></span>
+            <span class="env-seal" aria-hidden="true">❤</span>
+            <span class="env-to">To, <b data-name="managerName"></b></span>
+          </button>
+
+          <button class="btn btn-glow" id="openLetterBtn" type="button" hidden data-cfg="openButton"></button>
+        </div>
+
+        <article class="letter" id="letter" hidden>
+          <div class="letter-photo" id="letterPhoto"></div>
+          <p class="letter-kicker">Final notice · handle with care</p>
+          <h2 class="letter-title" id="s4-title" tabindex="-1" data-cfg="letterTitle"></h2>
+          <div class="letter-divider" aria-hidden="true"><span>❦</span></div>
+          <div class="letter-body" id="letterBody"></div>
+          <div class="letter-divider" aria-hidden="true"><span>♡</span></div>
+
+          <div class="finale" id="finale">
+            <p class="finale-quote" data-cfg="finalQuote"></p>
+            <p class="finale-sign"><span data-cfg="signOff"></span><span class="finale-name" data-name="myName"></span></p>
+            <button class="btn btn-glass" id="restartBtn" type="button" data-cfg="restartButton"></button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Overlays ===== -->
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="veil" id="veil" aria-hidden="true"><div class="veil-inner"><span class="veil-icon" id="veilIcon">✨</span><span class="veil-text" id="veilText"></span></div></div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <figure class="lightbox-fig">
+      <img id="lightboxImg" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo">✕</button>
+  </div>
+
+  <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
